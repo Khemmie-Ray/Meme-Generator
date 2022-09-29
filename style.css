@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    min-height: 100vh;
+}
+
+header, .btn {
+    display: flex;
+}
+
+header {
+    align-items: center;
+    height: 100px;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+h1 {
+    width: 80%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    width: 8%;
+}
+
+header,
+#generateMemes {
+    background-color: brown;
+    color: white;
+}
+
+#generateMemes {
+    display: block;
+    margin-top: 1em;
+    padding: 1.5em;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 1em auto;
+}
+
+input[type="text"] {
+    padding: 1em;
+    width: 48%;
+    margin-top: 2em;
+    border: 1px solid grey;
+}
+
+input[type="text"]:first-child {
+    margin-right: .8em;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    background-color: rgb(100, 98, 98);
+    color: white;
+    border: 0;
+}
+
+#generateMemes:hover,
+#generateMemes:focus {
+    background-color: rgb(91, 21, 21);
+    color: white;
+}
+
+.btn {
+    justify-content: center;
+}
+
+.meme-img {
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.heroimg img {
+    width: 600px;
+}
+
+.img-text {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    top: 5%;
+}
+
+.bottom {
+    bottom: 5%;
+}
+
+@media (max-width: 600px) {
+    .meme-img img {
+        width: 300px;
+    }
+
+    #generateMemes {
+        width: 60%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .logo {
+        width: 12%;
+    }
+
+    .img-text {
+        font-size: 1.2rem;
+    }
+}
